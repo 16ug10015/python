@@ -1,6 +1,4 @@
-Python 3.7.3 (default, Apr  3 2019, 05:39:12) 
-[GCC 8.3.0] on linux
-Type "help", "copyright", "credits" or "license()" for more information.
+1)ARITHMETIC
 >>> a="Hi Ali"
 >>> a
 'Hi Ali'
@@ -33,11 +31,6 @@ Type "help", "copyright", "credits" or "license()" for more information.
 >>> c=a+b
 >>> c
 'Hi Alihow are you'
->>> c=upper()
-Traceback (most recent call last):
-  File "<pyshell#18>", line 1, in <module>
-    c=upper()
-NameError: name 'upper' is not defined
 >>> c.upper()
 'HI ALIHOW ARE YOU'
 >>> c.title()
@@ -47,10 +40,6 @@ NameError: name 'upper' is not defined
 >>> a=z.replace('HI','HELLO')
 >>> a
 'HELLO ALI'
->>> z="hello mate'
-SyntaxError: EOL while scanning string literal
 >>> z='hello mate'
 >>> a=z.capitalize
 >>> a
-<built-in method capitalize of str object at 0x7f18062681f0>
->>> 
