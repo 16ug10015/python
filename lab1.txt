@@ -1,0 +1,56 @@
+Python 3.7.3 (default, Apr  3 2019, 05:39:12) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a="Hi Ali"
+>>> a
+'Hi Ali'
+>>> b='how are you'
+>>> b
+'how are you'
+>>> c="where are you"
+>>> c
+'where are you'
+>>> a+b+c
+'Hi Alihow are youwhere are you'
+>>> b+b
+'how are youhow are you'
+>>> b*2
+'how are youhow are you'
+>>> len(a)
+6
+>>> len(b)
+11
+>>> len(c)
+13
+>>> a.upper()
+'HI ALI'
+>>> a.title()
+'Hi Ali'
+>>> a.lower()
+'hi ali'
+>>> a+b.title()
+'Hi AliHow Are You'
+>>> c=a+b
+>>> c
+'Hi Alihow are you'
+>>> c=upper()
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    c=upper()
+NameError: name 'upper' is not defined
+>>> c.upper()
+'HI ALIHOW ARE YOU'
+>>> c.title()
+'Hi Alihow Are You'
+>>> z=c.replace('HI','hello')
+>>> z='HI ALI'
+>>> a=z.replace('HI','HELLO')
+>>> a
+'HELLO ALI'
+>>> z="hello mate'
+SyntaxError: EOL while scanning string literal
+>>> z='hello mate'
+>>> a=z.capitalize
+>>> a
+<built-in method capitalize of str object at 0x7f18062681f0>
+>>> 
