@@ -1,0 +1,51 @@
+>>> a="CMRU"
+>>> a
+'CMRU'
+>>> a[0]
+'C'
+>>> a[3]
+'U'
+>>> len[a]
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    len[a]
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> len(a)
+4
+>>> a[1:3]
+'MR'
+>>> a.lower()
+'cmru'
+>>> a.upper()
+'CMRU'
+>>> a.capitalize()
+'Cmru'
+>>> a.title()
+'Cmru'
+>>> a[0:3]
+'CMR'
+>>> a.islower()
+False
+>>> a.isupper()
+True
+>>> a
+'CMRU'
+>>> d="abdul"
+>>> e="raqib"
+>>> b=d+e
+>>> b
+'abdulraqib'
+>>> b.replace("raqib","ali")
+'abdulali'
+>>> b
+'abdulraqib'
+>>> 
+f="python lab"
+>>> f.spilt(' ')
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    f.spilt(' ')
+AttributeError: 'str' object has no attribute 'spilt'
+>>> f.split(" ")
+['python', 'lab']
+>>> 
