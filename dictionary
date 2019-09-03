@@ -1,0 +1,55 @@
+>>> dict1={1:'Ali', 2:'Haider'}
+>>> print(dict1)
+{1: 'Ali', 2: 'Haider'}
+>>> print(dict1[1]}
+SyntaxError: invalid syntax
+>>> print(dict1[1])
+Ali
+>>> dict1.pop(1)
+'Ali'
+>>> print(dict1)
+{2: 'Haider'}
+>>> dict2={'Name':'Ali','Age':21}
+>>> print(dict2)]\
+	       
+SyntaxError: invalid syntax
+>>> print(dict2)
+{'Name': 'Ali', 'Age': 21}
+>>> print(dict2['Name'])
+Ali
+>>> dict2.update({'Age':21})
+>>> print(dict2)
+{'Name': 'Ali', 'Age': 21}
+>>> x=dict2.keys()
+>>> print(x)
+dict_keys(['Name', 'Age'])
+>>> dict3={'USN':15,'Branch':'IT'}
+>>> dict3=dict2.copy()
+>>> print(dict3)
+{'Name': 'Ali', 'Age': 21}
+>>> dict3.clear()
+>>> print(dict3)
+{}
+>>> {}
+{}
+>>> dict3={1:23,2:43,3:54}
+>>> print(dict3)
+{1: 23, 2: 43, 3: 54}
+>>> max(dict3)
+3
+>>> max(dict3.values()}
+SyntaxError: invalid syntax
+>>> max{(dict3.values()}
+    
+SyntaxError: invalid syntax
+>>> max{dict3.values()
+    
+SyntaxError: invalid syntax
+>>> max{dict3.values()}
+SyntaxError: invalid syntax
+>>> x=sum(dict3)
+>>> print(x)
+6
+>>> x=sum(dict3.values())
+>>> print(x)
+120
