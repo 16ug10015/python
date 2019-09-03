@@ -30,15 +30,15 @@ False
 True
 >>> a
 'CMRU'
->>> d="abdul"
->>> e="raqib"
+>>> d="ali"
+>>> e="haider"
 >>> b=d+e
 >>> b
-'abdulraqib'
->>> b.replace("raqib","ali")
-'abdulali'
+'alihaider'
+>>> b.replace("haider","ali")
+'mirhaider'
 >>> b
-'abdulraqib'
+'alihaider'
 >>> 
 f="python lab"
 >>> f.spilt(' ')
