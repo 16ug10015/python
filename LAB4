@@ -1,0 +1,53 @@
+PROGRAM-4
+
+
+PYTHON:
+
+from http.server import HTTPServer, BaseHTTPRequestHandler
+class web_server(BaseHTTPRequestHandler):
+
+def do_GET(self):
+if self.path == '/':
+self.path = '/Web.html'
+try:
+#Reading the file
+file_to_open = open(self.path[1:]).read()
+self.send_response(200)
+except:
+file_to_open = "File not found"
+self.send_response(404)
+
+self.end_headers()
+self.wfile.write(bytes(file_to_open, 'utf-8'))
+
+httpd = HTTPServer(('localhost', 8080), web_server)
+httpd.serve_forever()
+HTML:
+
+<html>
+<head>
+<title>Python Course</title>
+</head>
+<body>
+<h1>Simple Web Page</h1>
+<p>Congratulations! The HTTP Server is working!</p>
+</body>
+</html>
+
+
+
+PROGRAM-2
+
+from collections import Counter
+
+
+def word_count(fname):
+
+with open(fname) as f:
+f1=Counter(f.read().split())
+print (f1)
+return f1.most_common(1)
+
+
+
+print("Number of words in the file :", word_count("Python.txt"))
